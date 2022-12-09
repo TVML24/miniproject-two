@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/media-queries.css">
     <title>CSS Snippet Cheatsheet</title>
 </head>
 <body>
@@ -25,11 +26,11 @@
                         <figcaption>Use these three properties to create a flexbox row layout.</figcaption>
                         <pre class="top">
     
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+ .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
                         </pre>
                     </figure>
                 </article>
@@ -39,12 +40,12 @@
                         <figcaption>This will create a background linear gradient from top to bottom.</figcaption>
                         <pre class= "bottom">
         
-        .linear-gradient-background {
-            background-image: linear-gradient(
-                rgba(232, 102, 236, 0.3) 0%,
-                rgba(232, 102, 236, 0.6) 100%,
-            );
-        }
+ .linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%,
+    );
+ }
                         </pre>
                     </figure>
                 </article>
@@ -58,10 +59,10 @@
                 
                 
     
-    .column {
-        display: flex;
-        flex-direction: column;
-    }
+ .column {
+    display: flex;
+    flex-direction: column;
+ }
                             </pre>
                     </figure>
                 </article>
@@ -71,15 +72,15 @@
                         <figcaption>Use transition and box shadows to glow on hover.</figcaption>
                         <pre class="bottom">
     
-    .code-card, .card-header {
-        border-radius: 8px;
-        transition: all 0.5s ease-in-out;
-    }
-    .code-card:hover, .card header {
-        box-shadow: inset 0px 0px 8px
-        rgba (232, 102, 236, 1), 0 0 15px
-        rgba (232, 102, 236, 1);
-    }
+ .code-card, .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+ }
+ .code-card:hover, .card header {
+    box-shadow: inset 0px 0px 8px
+    rgba (232, 102, 236, 1), 0 0 15px
+    rgba (232, 102, 236, 1);
+ }
                         </pre>
                     </figure>
                 </article>
@@ -91,12 +92,12 @@
                         <figcaption>Build a 12-column layout using CSS grid.</figcaption>
                         <pre class="top">
                 
-    .grid {
-        display: grid;
-        width: 100%;
-        grid-template-columns:
-        repeat(12, 1fr);
-    }
+ .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, 1fr);
+ }
                         </pre>
                     </figure>
                 </article>
@@ -106,10 +107,10 @@
                         <figcaption>Use position properties and negative margins to raise elements higher than their natural starting point.</figcaption>
                         <pre class="bottom">
     
-    .card-header {
-        position: relative;
-        margin-top: -20%;
-    }
+ .card-header {
+    position: relative;
+    margin-top: -20%;
+ }
                         </pre>
                     </figure>
                 </article>

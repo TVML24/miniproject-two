@@ -1,0 +1,147 @@
+@media screen and (max-width: 992px) {
+    header p {
+        padding-bottom:6%;
+    }
+
+    .flex-container {
+        height:100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 1%;
+        align-self: center;
+    }
+
+    .flex-column-left {
+        position: relative;
+        justify-content: space-evenly;
+        gap: 2%;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        height:90%;
+        width: 90%;
+    }
+    
+    .flex-column-center {
+        position: relative;
+        justify-content: space-evenly;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        height:90%;
+        width: 90%;
+    }
+
+    .flex-column-right {
+        position: relative;
+        justify-content: space-evenly;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        width: 90%;
+        height:90%;
+    }
+
+    article {
+        width:45%;
+        height:25%;
+        padding-bottom: 3%;
+    }
+
+    footer {
+        width: 100%;
+        padding-left: 38%;
+        padding-right: 38%;
+    }
+
+    footer h3 {
+        width: 100%;
+    }
+
+    .top {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+    .bottom {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    header p {
+        padding-bottom:8%;
+    }
+
+    .flex-container {
+        height:100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 1%;
+        align-self: center;
+    }
+
+    .flex-column-left {
+        position: relative;
+        justify-content: space-evenly;
+        gap: 2%;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        height:90%;
+        width: 90%;
+    }
+    
+    .flex-column-center {
+        position: relative;
+        justify-content: space-evenly;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        height:90%;
+        width: 90%;
+    }
+
+    .flex-column-right {
+        position: relative;
+        justify-content: space-evenly;
+        align-self: center;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        width: 90%;
+        height:90%;
+    }
+
+    article {
+        width:90%;
+        height:25%;
+        padding-bottom: 3%;
+    }
+
+    footer {
+        width: 100%;
+        padding-left: 28%;
+        padding-right: 22%;
+    }
+
+    footer h3 {
+        width: 100%;
+    }
+
+    .top {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+    .bottom {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+}
+
+
