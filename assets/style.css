@@ -1,0 +1,22 @@
+:root {
+    --lavender: #E867ED;
+    --white: #fff;
+    --black: #333940;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background: var(--black);
+}
+
+header h1 {
+    color: var(--lavender);
+}
+
+header p {
+    color: var(--white);
+}
