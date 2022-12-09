@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>CSS Snippet Cheatsheet</title>
 </head>
@@ -13,93 +17,103 @@
         <p>Ever have trouble recalling the exact syntax of your favourite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
     <main>
-        <div class= "flex-column-left">
-            <article>
-                <h2>Flexbox Row</h2>
-                <figure>
-                    <figcaption>Use these three properties to create a flexbox row layout.</figcaption>
-                    <pre>
-                        .row {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                        }
-                    </pre>
-                </figure>
-            </article>
-            <article>
-                <h2>Linear Gradients</h2>
-                <figure>
-                    <figcaption>This will create a background linear gradient from top to bottom.</figcaption>
-                    <pre>
-                        .linear-gradient-background {
-                            background-image: linear-gradient(
-                                rgba(232, 102, 236, 0.3) 0%,
-                                rgba(232, 102, 236, 0.6) 100%,
-                            );
-                        }
-                    </pre>
-                </figure>
-            </article>
-        </div>
-        <div= class= "flex-column-center">
-            <article>
-                <h2>Flexbox Column</h2>
-                <figure>
-                    <figcaption>Use this to create a flexbox column layout.</figcaption>
-                    <pre>
-                        .column {
-                            display: flex;
-                            flex-direction: column;
-                        }
-                    </pre>
-                </figure>
-            </article>
-            <article>
-                <h2>Box Transition Glow</h2>
-                <figure>
-                    <figcaption>Use transition and box shadows to glow on hover.</figcaption>
-                    <pre>
-                        .code-card, .card-header {
-                            border-radius: 8px;
-                            transition: all 0.5s ease-in-out;
-                        }
-                        .code-card:hover, .card header {
-                            box-shadow: inset 0px 0px 8px
-                        rgba (232, 102, 236, 1), 0 0 15px
-                        rgba (232, 102, 236, 1);
-                        }
-                    </pre>
-                </figure>
-            </article>
-        </div>
-        <div= class= "flex-column-right">
-            <article>
-                <h2>CSS Grid Layout</h2>
-                <figure>
-                    <figcaption>Build a 12-column layout using CSS grid.</figcaption>
-                    <pre>
-                        .grid {
-                            display: grid;
-                            width: 100%;
-                            grid-template-columns:
-                        repeat(12, 1fr);
-                        }
-                    </pre>
-                </figure>
-            </article>
-            <article>
-                <h2>Overlay Card with Title</h2>
-                <figure>
-                    <figcaption>Use position properties and negative margins to raise elements higher than their natural starting point.</figcaption>
-                    <pre>
-                        .card-header {
-                            position: relative;
-                            margin-top: -20%;
-                        }
-                    </pre>
-                </figure>
-            </article>
+        <div class="flex-container">
+            <div class= "flex-column-left">
+                <article>
+                    <div class= "card-header"><h2>Flexbox Row</h2></div>
+                    <figure>
+                        <figcaption>Use these three properties to create a flexbox row layout.</figcaption>
+                        <pre class="top">
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+                        </pre>
+                    </figure>
+                </article>
+                <article>
+                    <div class= "card-header"><h2>Linear Gradients</h2></div>
+                    <figure>
+                        <figcaption>This will create a background linear gradient from top to bottom.</figcaption>
+                        <pre class= "bottom">
+        
+        .linear-gradient-background {
+            background-image: linear-gradient(
+                rgba(232, 102, 236, 0.3) 0%,
+                rgba(232, 102, 236, 0.6) 100%,
+            );
+        }
+                        </pre>
+                    </figure>
+                </article>
+            </div>
+            <div class= "flex-column-center">
+                <article>
+                    <div class= "card-header"><h2>Flexbox Column</h2></div>
+                    <figure>
+                        <figcaption>Use this to create a flexbox column layout.</figcaption>
+                            <pre class="top">
+                
+                
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+                            </pre>
+                    </figure>
+                </article>
+                <article>
+                    <div class= "card-header"><h2>Box Transition Glow</h2></div>
+                    <figure>
+                        <figcaption>Use transition and box shadows to glow on hover.</figcaption>
+                        <pre class="bottom">
+    
+    .code-card, .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+    .code-card:hover, .card header {
+        box-shadow: inset 0px 0px 8px
+        rgba (232, 102, 236, 1), 0 0 15px
+        rgba (232, 102, 236, 1);
+    }
+                        </pre>
+                    </figure>
+                </article>
+            </div>
+            <div class= "flex-column-right">
+                <article>
+                    <div class= "card-header"><h2>CSS Grid Layout</h2></div>
+                    <figure>
+                        <figcaption>Build a 12-column layout using CSS grid.</figcaption>
+                        <pre class="top">
+                
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns:
+        repeat(12, 1fr);
+    }
+                        </pre>
+                    </figure>
+                </article>
+                <article>
+                    <div class= "card-header"><h2>Overlay Card with Title</h2></div>
+                    <figure>
+                        <figcaption>Use position properties and negative margins to raise elements higher than their natural starting point.</figcaption>
+                        <pre class="bottom">
+    
+    .card-header {
+        position: relative;
+        margin-top: -20%;
+    }
+                        </pre>
+                    </figure>
+                </article>
+            </div>
         </div>
     </main>
     <footer>
